@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-webinar"
+    }
+  },
+  "defaultProject": "demo-webinar",
+  "cli": {
+    "analytics": false
+  }
 }
