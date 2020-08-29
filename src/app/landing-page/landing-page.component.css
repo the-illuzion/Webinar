@@ -203,8 +203,7 @@ iframe {
     }
     .row div {
        font-size: 1.2em;
-       width:80px;
-       margin:2vh 10px;
+       margin:2vh 0px;
        padding: 10px;
        width:130px;
        //top:34vh;

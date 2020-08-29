@@ -229,13 +229,11 @@ width:100%;
 
   }
 
-@media(max-width:900px) {
+/*@media(max-width:900px) {
 
-    body{
+    #main{
 
-      //position: fixed;
       background-size:100vw 100vh;
-      //background-image:none;
       background-image: url("../../assets/images/video_bg.jpg");
       background-position:center;
       overflow-x: hidden;
@@ -253,7 +251,7 @@ width:100%;
       grid-template-rows:80vh 20vh;
       grid-template-areas:
           "video "
-          "sidebar";
+          "footer";
 
     }
 
@@ -299,19 +297,32 @@ width:100%;
 
       }
 
-  /*  .content{
-      grid-area:side;
-      position:absolute;
-      //margin-left:0;
-      margin-right:0;
-      //padding: 0;
-      float:right;
-      width:30%;
-      background-color: #ffffff;
-      height:100vh;
-    }
-*/
-}
+      iframe {
+          height:47%;
+          width: 46.5%;
+          position: absolute;
+          top: 19%;
+          left: 27%;
+          background-color:red;
+          z-index:999;
+      }
+
+    .navigation{
+
+        height:100px;
+        width:100%;
+        position: absolute;
+        top: 90%;
+        left:0%;
+        background-color:blue;
+        z-index:999;
+      }
+
+     .content{
+       display:none;
+     }
+
+}*/
 @media (min-width:991px)
 {
   #warning-message{
@@ -334,4 +345,75 @@ width:100%;
 }
 @media(max-width:900px) and (orientation:landscape){
   #warning-message { display:none; }
+}
+
+
+@media(max-width:900px) {
+
+    #main{
+
+      //position: fixed;
+      background-size:100vw 100vh;
+      background-image: none;
+      background-position:center;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+    .contai{
+      display:grid;
+      width: 100vw;
+      height: 100vh;
+      padding: 0 0;
+      margin: 0 0;
+      grid-gap:0;
+      grid-template-columns:60vw 40vw;
+      grid-template-rows:100vh;
+      grid-template-areas:
+          "video sidebar";
+
+    }
+
+
+    .video{
+      grid-area:video;
+      color:#fff;
+      font-family: sans-serif;
+      position:relative;
+      margin:0;
+      padding:0;
+      right:0;
+      background-image: url("../../assets/images/video2_bg.jpg");
+      background-position:center;
+      background-size: cover;
+      background-size: 100% 100%;
+      position:relative;
+
+
+    }
+
+    iframe {
+        height:44.5%;
+        width:43.5%;
+        position: absolute;
+        top: 23%;
+        left: 8.25%;
+        background-color:red;
+        z-index:999;
+    }
+
+  .content{
+
+      height:100%;
+      width:40%;
+      position: absolute;
+      top: 0%;
+      left: 49%;
+      background-color:blue;
+      z-index:999;
+    }
+
+   .navigation{
+     display:none;
+   }
 }
