@@ -13,9 +13,9 @@
 
      <div class=" button_reg text-center">
       <a href="" data-toggle="modal" data-target="#modalRegisterForm"><button class="last_bt ">Get Started</button></a>
-      <a href="" data-toggle="modal" data-target="#modalRegisterForm"><button class="last_bt ">Log In</button></a>
+      <a href="" data-toggle="modal" data-target="#modalLoginForm"><button class="last_bt ">Log In</button></a>
      </div>
-      <div ><a href="" id="agenda" class="last_bt"> Agenda </a></div>
+     <div ><a href="" id="agenda" class="last_bt" data-toggle="modal" data-target="#agendaCard"> Agenda </a></div>
 
 
 
@@ -82,16 +82,82 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
     </div> <!-- form-group// -->
-    <p class="text-center">Have an account? <a href="">Log In</a> </p>
+    <!--<p class="text-center">Have an account? <a href="">Log In</a> </p>-->
 </form>
 </article>
 
    </div>
   </div>
   </div>
-</div>
+
+<!--login card-->
+
+  <div class="modal fade centered-modal" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Log In</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <form>
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Enter password" type="password">
+    </div> <!-- form-group// -->
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Log In </button>
+    </div> <!-- form-group// -->
+    <!--<p class="text-center">Have an account? <a href="">Log In</a> </p>-->
+</form>
+</article>
+
+   </div>
+  </div>
+  </div>
+
+  <!--agenda card-->
+
+  <div class="modal fade centered-modal" id="agendaCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Agenda</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <article style="max-width: 100vw; height:500px;">
+      <div id="over">
+        <iframe src=""></iframe>
+      </div>
+    </article>
+
+
+   </div>
+  </div>
+  </div>
+
+
+
 
 </div>
-
-
+</div>
 </div>
