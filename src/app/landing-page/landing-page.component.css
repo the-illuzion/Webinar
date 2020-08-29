@@ -1,25 +1,35 @@
 
 
 /* general styling */
-html,body{
+#main{
     height: 100%;
+    width:100%;
     margin:0;
+
 
   }
 
-  #main {
+  #bg{
 
     background: url("../../assets/images/main_bg.jpg");
     background-position:center;
     //background-size: cover;
-    background-size:100% 100%;
+    background-size:100vw 100vh;
     color:#fff;
     position:relative;
     font-family: sans-serif;
+    overflow:auto;
+
+
   }
 
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
   header{
-    padding:;
+    //padding:;
     font-size:2vmin;
     padding:5vh;
 
@@ -31,21 +41,17 @@ html,body{
     text-align: center;
     display:flex;
     flex-direction: column;
-    //justify-content: center;
+
 
   }
 
-  @media(min-height:600px){
-    .container{
-      justify-content: center;
-    }
-  }
+
 
 
   .container h1 {
 
     font-weight: bold;
-    font-size:8vh;
+    font-size:9vh;
     padding-bottom:3vh;
     color:#fff;
     //text-align: center;
@@ -62,16 +68,11 @@ html,body{
     margin: auto;
     top: 50%;
     transform: translateY(-50%);
+    color:rgb(66, 68, 71);
+
 }
 
 
-
-  @media(min-height:800px){
-    .container h1 {
-        font-size: 8vh;
-
-      }
-  }
 
 
   .row{
@@ -81,11 +82,7 @@ html,body{
     margin-right: auto;
   }
 
-  @media(max-width:800px){
-    .row {
-        width: 100%;
-      }
-  }
+
 
   .row div{
 
@@ -102,22 +99,8 @@ html,body{
     //top:34vh;
     }
 
-    @media(max-width:780px){
-      .row div {
-         font-size: 1.2em;
-         width:100px;
 
 
-        }
-    }
-
-    /*@media(max-height:700px){
-      .row div {
-         font-size: 1.2em;
-         width:100px;
-
-        }
-    }*/
 
 
   .row div span {
@@ -142,11 +125,7 @@ html,body{
     margin:20px 0;
   }
 
-  @media(min-width:1100px){
-    .last_bt{
-      font-size: 30px;
-  }
-  }
+
   #agenda p{
     color:#fff;
     text-decoration: underline;
@@ -174,11 +153,48 @@ html,body{
     z-index: 1;
 }
 
-.btn-facebook {
-    background-color: #405D9D;
-    color: #fff;
+@media(min-height:600px){
+  .container{
+    justify-content: center;
+  }
 }
-.btn-twitter {
-    background-color: #42AEEC;
-    color: #fff;
+
+@media(min-height:800px){
+  .container h1 {
+      font-size: 8vh;
+
+    }
+}
+
+@media(max-width:800px){
+  .row {
+      width: 100%;
+
+    }
+}
+
+@media(max-width:780px){
+  .row div {
+     font-size: 1.2em;
+     width:110px;
+
+
+    }
+}
+
+@media(min-width:1100px){
+  .last_bt{
+    font-size: 30px;
+}
+}
+
+@media (max-height:550px) {
+  .centered-modal .modal-dialog{
+    margin:0 auto;
+    top: 0%;
+    transform: translateY(0%);
+
+
+  }
+
 }
