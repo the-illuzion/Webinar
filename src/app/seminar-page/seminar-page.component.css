@@ -268,7 +268,6 @@ width:100%;
           position: absolute;
           top: 19%;
           left: 27%;
-          background-color:red;
           z-index:999;
       }
 
@@ -344,7 +343,6 @@ width:100%;
         position: absolute;
         top: 23%;
         left: 8.25%;
-        background-color:red;
         z-index:999;
     }
 
