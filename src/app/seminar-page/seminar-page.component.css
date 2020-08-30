@@ -275,16 +275,23 @@ width:100%;
 
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      height:200px;
-      background:linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.01),rgba(255,255,255,0.03),rgba(255,255,255,0.05),rgba(255,255,255,0.08),rgba(255,255,255,0.2),rgba(255,255,255,0.5),rgba(255,255,255,0.7),rgba(255,255,255,0.85),rgba(255,255,255,1));
+      //align-items: flex-end;
+      position:absolute;
+      top:76vh;
+      left:15%;
+      height:24vh;
+      width:70%;
+      background:rgba(255,255,255,0.7);
       }
 
       .navigation img{
-        height:80px;
+        height:23vh;
         width:auto;
+        margin-bottom: 1vh;
+
 
       }
+
 
      .content{
        display:none;
