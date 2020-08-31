@@ -13,28 +13,50 @@ if ($(window).width() < 900) {
 
 else {
   $(".sp_bt").click(function(){
+    $(".navigation div").addClass('zoom');
+    $(".navigation div").removeClass('img_clicked');
+    $(".sp_bt").removeClass('zoom');
+    $(".sp_bt").addClass('img_clicked');
+    $('.poll_part').hide();
     $('.content').addClass("hid");
     $('#speaker_prof').removeClass("hid");
+
 });
 
 $(".poll_bt").click(function(){
-  
+  $(".navigation div").addClass('zoom');
+  $(".navigation div").removeClass('img_clicked');
+  $(".poll_bt").removeClass('zoom');
+  $(".poll_bt").addClass('img_clicked');
   $('.content').addClass("hid");
   $('#poll').removeClass("hid");
   $("#q1").show();
 });
 
 $(".chat_bt").click(function(){
+  $(".navigation div").addClass('zoom');
+  $(".navigation div").removeClass('img_clicked');
+  $(".chat_bt").removeClass('zoom');
+  $(".chat_bt").addClass('img_clicked');
+  $('.poll_part').hide();
   $('.content').addClass("hid");
   $('#chat').removeClass("hid");
 });
 
 $(".faq_bt").click(function(){
+  $(".navigation div").addClass('zoom');
+  $(".navigation div").removeClass('img_clicked');
+  $(".faq_bt").removeClass('zoom');
+  $(".faq_bt").addClass('img_clicked');
+  $('.poll_part').hide();
   $('.content').addClass("hid");
   $('#QA').removeClass("hid");
 });
 
 $('.closebtn').click(function(){
+  $(".navigation div").addClass('zoom');
+  $(".navigation div").removeClass('img_clicked');
+  $('.poll_part').hide();
  $('.content').addClass("hid");
  });
 
@@ -64,6 +86,9 @@ $(document).ready(function () {
     $("#qpoll #finishpoll").click(function () {
         $("#qpoll").hide();
         $('.content').addClass('hid');
+        $(".navigation div").removeClass('img_clicked');
+        $(".navigation div").addClass('zoom');
+
     });
 
     $("#qpoll #retakepoll").click(function () {

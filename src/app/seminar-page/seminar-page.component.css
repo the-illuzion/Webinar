@@ -221,8 +221,13 @@ width:100%;
   visibility: hidden;
 }
 
+.zoom:hover {
+  transform: scale(1.1);
+}
 
-
+.img_clicked{
+  opacity:0.8;
+}
 
 .closebtn {
   position: absolute;
@@ -317,7 +322,7 @@ width:100%;
 
       }
 
-     .content{
+     .content ,.profile{
        display:none;
      }
 
