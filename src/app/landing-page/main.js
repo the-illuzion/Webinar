@@ -3,7 +3,7 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('1 Sep, 2020 00:00:00').getTime(),
+let countDown = new Date('1 Sep, 2020 00:35:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
@@ -15,9 +15,8 @@ let countDown = new Date('1 Sep, 2020 00:00:00').getTime(),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
       //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'Event day';
-      //}
+      if (distance < 0) {
+        window.location.href = 'http://localhost:4200/#/mob';
+      }
 
     }, second)
