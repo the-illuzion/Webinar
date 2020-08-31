@@ -16,38 +16,93 @@
       </div>
 
 
-      <!--<div class="content" id="speaker_prof">
+      <div class="content hid" id="speaker_prof">
+        <div class="closebtn">×</div>
         <div id="speaker"></div>
         <div id="speaker_name">Speaker</div>
         <p>Designation:<span>Chief Engineer</span></p>
       </div>
 
-      <div class=" content" id="poll">
-         <div id="question">Q1 Choose one of the four</div>
+      <div class=" content hid" id="poll">
+         <div class="closebtn">×</div>
+
+         <div id="q1" class="poll_part">
+          <div id="question">Q1 Choose one of the four</div>
    			 <label for="q1a">
-            <input type="radio" id="q1a" name="q1" value="A">
-            Option1
+            <input type="button" class="poll_option" id="q1a" name="q1" value="Option1" onclick="que1_chng()">
+
           </label>
           <label for="q1b">
-            <input type="radio" id="q1b" name="q1" value="B">
-            Option2
+            <input type="button" class="poll_option" id="q1b" name="q1" value="Option2" onclick="que1_chng()">
+
           </label>
           <label for="q1c">
-            <input type="radio" id="q1c" name="q1" value="C">
-            Option3
+            <input type="button" class="poll_option" id="q1c" name="q1" value="Option3" onclick="que1_chng()">
+
           </label>
           <label for="q1d">
-            <input type="radio" id="q1d" name="q1" value="D">
-            Option4
+            <input type="button" class="poll_option" id="q1d" name="q1" value="Option4" onclick="que1_chng()">
+
           </label>
+          </div>
+
+          <div id="q2" class="poll_part">
+           <div id="question">Q2 Choose one of the four</div>
+    			 <label for="q2a">
+             <input type="button" class="poll_option" id="q2a" name="q2" value="Option1" onclick="que2_chng()">
+
+           </label>
+           <label for="q2b">
+             <input type="button" class="poll_option" id="q2b" name="q2" value="Option2" onclick="que2_chng()">
+
+           </label>
+           <label for="q2c">
+             <input type="button" class="poll_option" id="q2c" name="q2" value="Option3" onclick="que2_chng()">
+
+           </label>
+           <label for="q2d">
+             <input type="button" class="poll_option" id="q2d" name="q2" value="Option4" onclick="que2_chng()">
+
+           </label>
+           </div>
+
+           <div id="q3" class="poll_part">
+            <div id="question">Q3 Choose one of the four</div>
+     			 <label for="q3a">
+              <input type="button" class="poll_option" id="q3a" name="q3" value="Option1" onclick="que3_chng()">
+
+            </label>
+            <label for="q3b">
+              <input type="button" class="poll_option" id="q3b" name="q3" value="Option2" onclick="que3_chng()">
+
+            </label>
+            <label for="q3c">
+              <input type="button" class="poll_option" id="q3c" name="q3" value="Option3" onclick="que3_chng()">
+
+            </label>
+            <label for="q3d">
+              <input type="button" class="poll_option" id="q3d" name="q3" value="Option4" onclick="que3_chng()">
+
+            </label>
+            </div>
+
+            <div id="qpoll" class="poll_part">
+               <input type="button" id="finishpoll" name="finish" value="finish poll" >
+               <input type="button"  id="retakepoll" name="retaking" value="Retake the poll">
+             </div>
+
+
+
       </div>
 
-      <div class="item content" id="QA">
+      <div class="content hid" id="QA">
+        <div class="closebtn">×</div>
         <input type="text" id="textbox" name="ans" value="" placeholder="Ask a question">
         <input id="submit" type="submit" value="Send">
-      </div>-->
+      </div>
 
-      <div class="content" id="chat">
+      <div class="content hid" id="chat">
+        <div class="closebtn">×</div>
         <div id="User">Username</div>
         <div id="msg">display_message</div>
         <div id="send_msg">
@@ -60,13 +115,13 @@
 
   </div>
   <div class="navigation fixed-bottom">
-    <a href=""><img src="../../assets/images/icon2/speaker's profile.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/poll.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/chats.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/speaker_notes.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/Ask a question.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/briefcase.png" alt=""></a>
-    <a href=""><img src="../../assets/images/icon2/exit.png" alt=""></a>
+    <div class="sp_bt zoom"><img src="../../assets/images/icons/speaker's profile.png" alt=""></div>
+    <div class="poll_bt zoom"><img src="../../assets/images/icons/poll.png" alt=""></div>
+    <div class="chat_bt zoom"><img src="../../assets/images/icons/chats.png" alt=""></div>
+    <div class="snotes_bt zoom"><img src="../../assets/images/icons/speaker_notes.png" alt=""></div>
+    <div class="faq_bt zoom"><img src="../../assets/images/icons/Ask a question.png" alt=""></div>
+    <div class="briefcase_bt zoom"><img src="../../assets/images/icons/briefcase.png" alt=""></div>
+    <div class="exit_bt zoom"><img src="../../assets/images/icons/exit.png" alt=""></div>
   </div>
 </div>
 

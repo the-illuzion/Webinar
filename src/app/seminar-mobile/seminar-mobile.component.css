@@ -27,7 +27,7 @@ iframe {
   width: 100vw;
   height: 100vh;
   grid-template-columns:25% 50% 25%;
-  grid-template-rows: 1fr 2fr 5fr;
+  grid-template-rows: 1fr 1fr 5fr;
   grid-gap: 1rem;
   grid-template-areas:
       " . video profile"
@@ -37,18 +37,15 @@ iframe {
 
 
 .profile{
-  position: absolute;
-  left:79.8%;
   grid-area:profile;
   display:flex;
   flex-direction:row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: rgba(30,30,30,0.6);
   border-radius: 10px;
-  height: 16.3%;
-  width:20%;
-
+  padding-bottom: 2%;
+  margin:1% 5%;
 }
 
 .profile_pic{
@@ -56,19 +53,19 @@ iframe {
   width:67px;
   height:67px;
   border-radius: 50%;
-  margin-left:20px;
+  margin-top:15px;
+  margin-right:2%;
 }
 
 #username{
   padding: 10px 15px 0 15px;
   font-size:1.7vw;
   font-weight: bold;
-  margin:20px;
+  width:70px;
+
 }
 
 .content{
-  position: absolute;
-  top:14%;
   grid-area:content;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
@@ -80,8 +77,7 @@ iframe {
   margin-right:0%;
   width:80%;
   background-color: #ffffff;
-  height:60vh;
-
+  height:57vh;
 }
 
 #User{
@@ -138,12 +134,12 @@ width:100%;
 }
 
 #poll #question{
-  padding:20px;
+  padding:10px;
 }
 
  #poll label{
   display:block;
-  padding:3px;
+  padding:10px;
   padding-left:20px;
   font-weight: lighter;
 }
@@ -182,29 +178,6 @@ width:100%;
 
 }
 
-.poll_option{
-  width:90%;
-  margin:0;
-  text-align: start;
-}
-
-.poll_option:hover{
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05);
-}
-
-.poll_option:active{
-  -ms-transform: scale(0.95); /* IE 9 */
-  -webkit-transform: scale(0.95); /* Safari 3-8 */
-  transform: scale(0.95);
-  background-color: gray;
-  color:white;
-}
-
-
-
-
 #speaker_prof span{
   font-weight: lighter;
 
@@ -217,16 +190,7 @@ width:100%;
 
 
 .hid{
-  //display:none;
-  visibility: hidden;
-}
-
-.zoom:hover {
-  transform: scale(1.1);
-}
-
-.img_clicked{
-  opacity:0.8;
+  display:none;
 }
 
 .closebtn {
@@ -254,89 +218,19 @@ width:100%;
 
   }
 
-@media(max-width:900px) {
+
+
+@media(max-width:900px){
 
     #main{
 
-      //overflow-x: hidden;
-      overflow-y: hidden;
-      margin:0;
-      padding:0;
-      right:0;
-      background-image: url("../../assets/images/video_bg.jpg");
-      background-position:center;
-      background-size: cover;
-      background-size: 100% 100%;
-      position:relative;
-
-    }
-    .contai{
-      display:grid;
-      width: 100vw;
-      height: 100vh;
-      padding: 0 0;
-      margin: 0 0;
-      grid-gap:0;
-      grid-template-columns:100vw;
-      grid-template-rows:70vh 30vh;
-      grid-template-areas:
-          "video "
-          "footer";
-
-    }
-
-
-    .video{
-      grid-area:video;
-      color:#fff;
-      font-family: sans-serif;
-      position:relative;
-      margin:0;
-      padding:0;
-      right:0;
-
-    }
-
-
-      iframe {
-          height:47%;
-          width: 46.5%;
-          position: absolute;
-          top: 19%;
-          left: 27%;
-          z-index:999;
-      }
-
-    .navigation{
-
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      height:200px;
-      background:linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.01),rgba(255,255,255,0.03),rgba(255,255,255,0.05),rgba(255,255,255,0.08),rgba(255,255,255,0.2),rgba(255,255,255,0.5),rgba(255,255,255,0.7),rgba(255,255,255,0.85),rgba(255,255,255,1));
-      }
-
-      .navigation img{
-        height:80px;
-        width:auto;
-
-      }
-
-     .content ,.profile{
-       display:none;
-     }
-
-}
-
-
-/*@media(max-width:900px){
-    #main{
       //position: fixed;
       background-size:100vw 100vh;
       background-image: none;
       background-position:center;
       overflow-x: hidden;
       overflow-y: hidden;
+
     }
     .contai{
       display:grid;
@@ -349,7 +243,10 @@ width:100%;
       grid-template-rows:100vh;
       grid-template-areas:
           "video sidebar";
+
     }
+
+
     .video{
       grid-area:video;
       color:#fff;
@@ -363,7 +260,10 @@ width:100%;
       background-size: cover;
       background-size: 100% 100%;
       position:relative;
+
+
     }
+
     iframe {
         height:44.5%;
         width:43.5%;
@@ -372,19 +272,21 @@ width:100%;
         left: 8.25%;
         z-index:999;
     }
+
   .content{
+
       height:100%;
       width:40%;
       position: absolute;
       top: 0%;
       left: 49%;
-      background-color:blue;
       z-index:999;
     }
+
    .navigation{
      display:none;
    }
-}*/
+}
 
 
 @media (min-width:991px)
