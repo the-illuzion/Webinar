@@ -1,4 +1,4 @@
-<div id="main">
+<div id="main" class="ddlg">
   <div class="bg">
 
     <div class="contai">
@@ -11,20 +11,26 @@
 
 
       <div class="profile">
-        <div class="profile_pic"></div>
+        <img src="abc.jpg" alt="abc" class="profile_pic"/>
         <div id="username">User Name</div>
       </div>
 
 
       <div class="content hid" id="speaker_prof">
-        <div class="closebtn">×</div>
-        <div id="speaker"></div>
-        <div id="speaker_name">Speaker</div>
-        <p>Designation:<span>Chief Engineer</span></p>
+        <div class="cont_header">
+          <span id="header_msg">Speaker Profile</span>
+         <span class="closebtn">×</span>
+        </div>
+        <img src="abcd.jpg" alt="abcd" id="speaker">
+        <div id="speaker_name" style="font-weight:bolder; color:#3d4040; font-size:1.2em;">Speaker</div>
+        <p style="margin-left:5%;"><span style="font-weight:bold;color:#3d4040">Designation:</span>Chief Engineer</p>
       </div>
 
       <div class=" content hid" id="poll">
-         <div class="closebtn">×</div>
+        <div class="cont_header">
+          <span id="header_msg">Poll Questions</span>
+         <span class="closebtn">×</span>
+        </div>
 
          <div id="q1" class="poll_part">
           <div id="question">Q1 Choose one of the four</div>
@@ -87,6 +93,7 @@
             </div>
 
             <div id="qpoll" class="poll_part">
+               <p>Thank you for taking this poll</p>
                <input type="button" id="finishpoll" name="finish" value="finish poll" >
                <input type="button"  id="retakepoll" name="retaking" value="Retake the poll">
              </div>
@@ -102,7 +109,10 @@
       </div>
 
       <div class="content hid" id="chat">
-        <div class="closebtn">×</div>
+        <div class="cont_header">
+          <span id="header_msg">Message</span>
+         <span class="closebtn">×</span>
+        </div>
         <div id="User">Username</div>
         <div id="msg">display_message</div>
         <div id="send_msg">

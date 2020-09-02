@@ -1,17 +1,70 @@
 $(document).ready(function(){
 
 
-if ($(window).width() < 900) {
+if ($(window).width() < 950) {
 
+   $(".sp_bt").click(function(){
+       $("#main").addClass('hmkhb');
+       $("#main").removeClass('ddlg');
+       $('.content').addClass("hid");
+       $('#speaker_prof').removeClass("hid");
+       $('.poll_part').hide();
+      });
 
+    $(".poll_bt").click(function(){
+          $("#main").addClass('hmkhb');
+          $("#main").removeClass('ddlg');
+          $('.content').addClass("hid");
+          $('#poll').removeClass("hid");
+          $("#q1").show();
+         });
 
+     $(".chat_bt").click(function(){
+          $("#main").addClass('hmkhb');
+          $("#main").removeClass('ddlg');
+          $('.content').addClass("hid");
+          $('#chat').removeClass("hid");
+          $('.poll_part').hide();
+          });
+
+      $(".faq_bt").click(function(){
+           $("#main").addClass('hmkhb');
+           $("#main").removeClass('ddlg');
+           $('.content').addClass("hid");
+           $('#QA').removeClass("hid");
+           $('.poll_part').hide();
+           });
+
+      $(".faq_bt").click(function(){
+           $("#main").addClass('hmkhb');
+           $("#main").removeClass('ddlg');
+           $('.content').addClass("hid");
+           $('#QA').removeClass("hid");
+           $('.poll_part').hide();
+          });
+
+      $('.closebtn').click(function(){
+          $("#main").addClass('ddlg');
+          $("#main").removeClass('hmkhb');
+          $('.content').addClass("hid");
+          $('.poll_part').hide();
+
+         });
+
+      $("#qpoll #finishpoll").click(function () {
+             $("#main").addClass('ddlg');
+             $("#main").removeClass('hmkhb');
+             $('.content').addClass('hid');
+             $('.poll_part').hide();
+
+         });
 
 
 }
 
 
 
-else {
+else{
   $(".sp_bt").click(function(){
     $(".navigation div").addClass('zoom');
     $(".navigation div").removeClass('img_clicked');
@@ -59,8 +112,8 @@ $('.closebtn').click(function(){
   $('.poll_part').hide();
  $('.content').addClass("hid");
  });
-
 }
+
 
 
 });
