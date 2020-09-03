@@ -35,7 +35,7 @@ if ($(window).width() < 950) {
            $('.poll_part').hide();
            });
 
-      $(".faq_bt").click(function(){
+      $(".briefcase_bt").click(function(){
            $("#main").addClass('hmkhb');
            $("#main").removeClass('ddlg');
            $('.content').addClass("hid");
@@ -106,6 +106,17 @@ $(".faq_bt").click(function(){
   $('#QA').removeClass("hid");
 });
 
+$(".briefcase_bt").click(function(){
+  $(".navigation div").addClass('zoom');
+  $(".navigation div").removeClass('img_clicked');
+  $(".briefcase_bt").removeClass('zoom');
+  $(".briefcase_bt").addClass('img_clicked');
+  $('.content').addClass("hid");
+  $('#briefcase').removeClass("hid");
+  
+});
+
+
 $('.closebtn').click(function(){
   $(".navigation div").addClass('zoom');
   $(".navigation div").removeClass('img_clicked');
@@ -148,5 +159,12 @@ $(document).ready(function () {
         $("#qpoll").hide();
         $('#q1').show();
     });
+
+    $(".navigation .faq_bt").click(function () {
+        $("#a_form").toggle();
+        $(".navigation").hide();
+    });
+
+
 
 });

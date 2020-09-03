@@ -3,7 +3,7 @@
   margin:0;
 }
 .bg{
-  background-image: url("../../assets/images/video_bg.jpg");
+  background-image: url("../../assets/images/madbury.png");
   background-position:center;
   background-size: cover;
   background-size: 100vw 100vh;
@@ -15,11 +15,12 @@
 }
 
 iframe {
-    height:47%;
-    width: 46.5%;
+    height:34%;
+    width: 35%;
     position: absolute;
-    top: 19%;
-    left: 27%;
+    top: 31%;
+    left: 32.5%;
+    background-color: #000;
 }
 
 .contai{
@@ -45,19 +46,23 @@ iframe {
   flex-direction:row;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(30,30,30,0.6);
-  border-radius: 10px;
-  height: 15%;
+  background-color: rgba(21, 18, 23,0.6);
+  border-radius:0 0 0 12px;
+  height: 12%;
   width:20%;
+  color:#fff;
+  border-bottom:2px solid #444345;
+  border-left:2px solid #444345;
 
 }
 
 .profile_pic{
-  background-color:#fff;
-  width:65px;
-  height:65px;
-  border-radius: 50%;
+  //background-color:#000;
+  width:60px;
+  height:60px;
+  border-radius: 60%;
   margin-left:10%;
+  //background-position: center;
 }
 
 #username{
@@ -69,7 +74,7 @@ iframe {
 
 .content{
   position: absolute;
-  top:16%;
+  top:18%;
   //grid-area:content;
   //grid-row: 2 / 3;
   //grid-column: 3 / 4;
@@ -120,6 +125,50 @@ width:100%;
  width:20px;
 }
 
+
+.files{
+  //transform: translateY(-50%);
+  top:50%;
+  margin:auto;
+}
+
+.files div{
+
+  padding:20px 10px 0 10px;
+  bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  height:20%;
+  background-color: #ccc8cb;
+  margin:4% auto;
+  position: relative;
+}
+
+.files div i{
+  padding:0 3%;
+}
+
+.files .fa-download{
+  //position:relative;
+  color:#000;
+
+  height:50%;
+  width:20%;
+  position: absolute;
+  //top:0%;
+  right:0%;
+  //margin-top:auto;
+  //right: 25px;
+  //background-color: purple;
+  //font-size:16%;
+  cursor: pointer;
+
+  top:25%;
+  margin:auto 5%;
+  float:bottom;
+}
+
 #textbox{
 
     height:150px;
@@ -139,6 +188,45 @@ width:100%;
   width:80px;
 }
 
+#a_form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:200px;
+  margin-bottom:1%;
+  width:70vw;
+  margin-left:15vw;
+
+}
+
+#a_form .but{
+  position:relative;
+  text-align: center;
+  width:85px;
+  margin:20px;
+  border-radius: 5px;
+  padding: 5px 0;
+  background :linear-gradient(#675080,#473659,#675080);
+  color:#fff;
+  box-shadow:inset -1px -1px 7px #d6bfe0;
+
+}
+
+#a_form .but:hover{
+  color:#fff;
+  background :linear-gradient(#675080,#66507d,#675080);
+}
+
+#a_form #textbox1{
+
+
+    width:60%;
+
+
+}
+
+
 #poll #question{
   padding:20px;
   font-weight: 520;
@@ -155,12 +243,13 @@ width:100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height:200px;
+  height:40%;
   background:linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),rgba(255,255,255,0.01),rgba(255,255,255,0.03),rgba(255,255,255,0.05),rgba(255,255,255,0.08),rgba(255,255,255,0.2),rgba(255,255,255,0.5),rgba(255,255,255,0.7),rgba(255,255,255,0.85),rgba(255,255,255,1));
 }
 
 .navigation img{
   height: 100px;
+  margin-bottom:2vh;
 }
 
 
@@ -195,6 +284,10 @@ width:100%;
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
+  background-image:linear-gradient(#9079a3,#553b6b,#9079a3);
+  border: 1px solid #291d33;
+  //background :#4d3066;
+  color:#fff;
 }
 
 .poll_option:active{
@@ -220,22 +313,38 @@ width:100%;
 
 }
 
+#qpoll .lastpoll{
+
+  //margin:0 5%;
+  display:flex;
+  justify-content: space-around;
+}
+
 #qpoll input{
-
-  margin:0 5%;
-
-
+  width:40%;
+  border: 1px solid #291d33;
+  background :#473754;
+  color:#fff;
+  box-shadow: 2px 2px 5px rgba(56, 43, 66,0.5);
 }
 
 
-#speaker_prof span{
-  font-weight: lighter;
+#speaker_prof .speaker_des span{
+  font-weight:bold;
+  display:inline;
+  text-decoration:underline;
 
 }
 
-#speaker_prof p{
-  position:absolute;
-  margin-top: 200px;
+#speaker_prof .speaker_des{
+  position:relative;
+  //margin-top: 200px;
+  width:60%;
+  font-size: 0.86em;
+  text-align: center;
+  //font-weight: bold;
+  top:40%;
+  margin:0 auto;
 }
 
 
@@ -263,7 +372,7 @@ width:100%;
 
 .content{
   box-shadow:-6px -2px 10px rgba(48, 48, 48,0.8);
-
+  background: #FFF;
   border-radius:6px;
 }
 
@@ -278,10 +387,15 @@ width:100%;
   position:relative;
   //border-top-left-radius:6px;
   //border-top-right-radius:6px;
-  color:#464747;
+  color:#FFF;
   border-radius: 2px 2px 0 0;
   box-shadow: inset 0 1px #7189a6, 0 2px 1px rgba(120, 147, 179, 0.4), 0 0 0 1px rgba(120, 147, 179, 0.5), 0 1px #7189a6;
+  background: #382a28;
+  border-radius: 2px 2px 0 0;
+  background-image: linear-gradient(to bottom,#552297,#350c52);
+  box-shadow: inset 0 1px #241d1c, 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px black;
 }
+
 
 
 .cont_header #header_msg{
@@ -441,7 +555,7 @@ width:100%;
        margin:0;
        padding:0;
        right:0;
-       background-image: url("../../assets/images/video2_bg.jpg");
+       background-image: url("../../assets/images/madburyzoom.png");
        background-position:center;
        background-size: cover;
        background-size: 100% 100%;
