@@ -22,7 +22,7 @@ export class SeminarPageComponent implements OnInit {
         $('#speaker_prof').removeClass("hid");
         $('.poll_part').hide();
       });
-
+  
       $(".poll_bt").click(function () {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
@@ -30,7 +30,7 @@ export class SeminarPageComponent implements OnInit {
         $('#poll').removeClass("hid");
         $("#q1").show();
       });
-
+  
       $(".chat_bt").click(function () {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
@@ -38,7 +38,7 @@ export class SeminarPageComponent implements OnInit {
         $('#chat').removeClass("hid");
         $('.poll_part').hide();
       });
-
+  
       $(".faq_bt").click(function () {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
@@ -46,7 +46,7 @@ export class SeminarPageComponent implements OnInit {
         $('#QA').removeClass("hid");
         $('.poll_part').hide();
       });
-
+  
       $(".faq_bt").click(function () {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
@@ -54,28 +54,28 @@ export class SeminarPageComponent implements OnInit {
         $('#QA').removeClass("hid");
         $('.poll_part').hide();
       });
-
+  
       $('.closebtn').click(function () {
         $("#main").addClass('ddlg');
         $("#main").removeClass('hmkhb');
         $('.content').addClass("hid");
         $('.poll_part').hide();
-
+  
       });
-
+  
       $("#qpoll #finishpoll").click(function () {
         $("#main").addClass('ddlg');
         $("#main").removeClass('hmkhb');
         $('.content').addClass('hid');
         $('.poll_part').hide();
-
+  
       });
-
-
+  
+  
     }
-
-
-
+  
+  
+  
     else {
       $(".sp_bt").click(function () {
         $(".navigation div").addClass('zoom');
@@ -85,9 +85,9 @@ export class SeminarPageComponent implements OnInit {
         $('.poll_part').hide();
         $('.content').addClass("hid");
         $('#speaker_prof').removeClass("hid");
-
+  
       });
-
+  
       $(".poll_bt").click(function () {
         $(".navigation div").addClass('zoom');
         $(".navigation div").removeClass('img_clicked');
@@ -97,7 +97,7 @@ export class SeminarPageComponent implements OnInit {
         $('#poll').removeClass("hid");
         $("#q1").show();
       });
-
+  
       $(".chat_bt").click(function () {
         $(".navigation div").addClass('zoom');
         $(".navigation div").removeClass('img_clicked');
@@ -107,7 +107,7 @@ export class SeminarPageComponent implements OnInit {
         $('.content').addClass("hid");
         $('#chat').removeClass("hid");
       });
-
+  
       $(".faq_bt").click(function () {
         $(".navigation div").addClass('zoom');
         $(".navigation div").removeClass('img_clicked');
@@ -117,7 +117,7 @@ export class SeminarPageComponent implements OnInit {
         $('.content').addClass("hid");
         $('#QA').removeClass("hid");
       });
-
+  
       $('.closebtn').click(function () {
         $(".navigation div").addClass('zoom');
         $(".navigation div").removeClass('img_clicked');
@@ -125,6 +125,7 @@ export class SeminarPageComponent implements OnInit {
         $('.content').addClass("hid");
       });
     }
+
     $("#q2").hide();
     $("#q3").hide();
     $("#qpoll").hide();
@@ -139,20 +140,26 @@ export class SeminarPageComponent implements OnInit {
     $("#q3 input").click(function () {
       $("#q3").hide();
       $('#qpoll').show();
-
+  
     });
     $("#qpoll #finishpoll").click(function () {
       $("#qpoll").hide();
       $('.content').addClass('hid');
       $(".navigation div").removeClass('img_clicked');
       $(".navigation div").addClass('zoom');
-
+  
     });
-
+  
     $("#qpoll #retakepoll").click(function () {
       $("#qpoll").hide();
       $('#q1').show();
     });
+  
+    $(".navigation .faq_bt").click(function () {
+      $("#a_form").toggle();
+      $(".navigation").hide();
+    });
+  
   }
 
 }
