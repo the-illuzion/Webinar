@@ -43,8 +43,7 @@ export class SeminarPageComponent implements OnInit {
       });
 
       $(".faq_bt").click(function () {
-        $("#main").addClass('hmkhb');
-        $("#main").removeClass('ddlg');
+
         $('.content').addClass("hid");
         $('#QA').removeClass("hid");
         $('.poll_part').hide();
@@ -54,7 +53,9 @@ export class SeminarPageComponent implements OnInit {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
         $('.content').addClass("hid");
-        $('#QA').removeClass("hid");
+
+        $('#briefcase').removeClass("hid");
+
         $('.poll_part').hide();
       });
 
