@@ -53,7 +53,9 @@ export class SeminarPageComponent implements OnInit {
         $("#main").addClass('hmkhb');
         $("#main").removeClass('ddlg');
         $('.content').addClass("hid");
+
         $('#briefcase').removeClass("hid");
+
         $('.poll_part').hide();
       });
 

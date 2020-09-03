@@ -128,9 +128,11 @@ width:100%;
 
 
 .files{
+
   position: relative;
   width:95%;
   margin:auto;
+
 
 }
 
@@ -152,12 +154,14 @@ width:100%;
 }
 
 .files .fa-download{
+
   color:#000;
   height:50%;
   width:20%;
   position: absolute;
   right:0%;
   cursor: pointer;
+
   top:25%;
   margin:auto 5%;
   float:bottom;
@@ -338,12 +342,15 @@ width:100%;
 
 #speaker_prof .speaker_des{
   position:relative;
+
   width:60%;
   font-size: 0.86em;
   text-align: center;
   //font-weight: bold;
+
   margin:auto;
   margin-top:10%;
+
 }
 
 
