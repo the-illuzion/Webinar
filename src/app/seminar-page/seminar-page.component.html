@@ -14,7 +14,7 @@
 
 
       <div class="profile">
-        <img src="../../assets/images/jason.jpg" alt="abc" class="profile_pic"/>
+        <img src="../../assets/images/jason.jpg" alt="abc" class="profile_pic" />
         <div id="username">Jason Silva</div>
       </div>
 
@@ -39,12 +39,12 @@
       <div class=" content hid" id="poll">
         <div class="cont_header">
           <span id="header_msg">Poll Questions</span>
-         <span class="closebtn">×</span>
+          <span class="closebtn">×</span>
         </div>
 
-         <div id="q1" class="poll_part">
+        <div id="q1" class="poll_part">
           <div id="question">Q1 Choose one of the four</div>
-   			 <label for="q1a">
+          <label for="q1a">
             <input type="button" class="poll_option" id="q1a" name="q1" value="Option1" onclick="que1_chng()">
 
           </label>
@@ -60,55 +60,55 @@
             <input type="button" class="poll_option" id="q1d" name="q1" value="Option4" onclick="que1_chng()">
 
           </label>
+        </div>
+
+        <div id="q2" class="poll_part">
+          <div id="question">Q2 Choose one of the four</div>
+          <label for="q2a">
+            <input type="button" class="poll_option" id="q2a" name="q2" value="Option1" onclick="que2_chng()">
+
+          </label>
+          <label for="q2b">
+            <input type="button" class="poll_option" id="q2b" name="q2" value="Option2" onclick="que2_chng()">
+
+          </label>
+          <label for="q2c">
+            <input type="button" class="poll_option" id="q2c" name="q2" value="Option3" onclick="que2_chng()">
+
+          </label>
+          <label for="q2d">
+            <input type="button" class="poll_option" id="q2d" name="q2" value="Option4" onclick="que2_chng()">
+
+          </label>
+        </div>
+
+        <div id="q3" class="poll_part">
+          <div id="question">Q3 Choose one of the four</div>
+          <label for="q3a">
+            <input type="button" class="poll_option" id="q3a" name="q3" value="Option1" onclick="que3_chng()">
+
+          </label>
+          <label for="q3b">
+            <input type="button" class="poll_option" id="q3b" name="q3" value="Option2" onclick="que3_chng()">
+
+          </label>
+          <label for="q3c">
+            <input type="button" class="poll_option" id="q3c" name="q3" value="Option3" onclick="que3_chng()">
+
+          </label>
+          <label for="q3d">
+            <input type="button" class="poll_option" id="q3d" name="q3" value="Option4" onclick="que3_chng()">
+
+          </label>
+        </div>
+
+        <div id="qpoll" class="poll_part">
+          <p>Thank you for taking this poll</p>
+          <div class="lastpoll">
+            <input type="button" id="finishpoll" name="finish" value="Finish poll">
+            <input type="button" id="retakepoll" name="retaking" value="Retake the poll">
           </div>
-
-          <div id="q2" class="poll_part">
-           <div id="question">Q2 Choose one of the four</div>
-    			 <label for="q2a">
-             <input type="button" class="poll_option" id="q2a" name="q2" value="Option1" onclick="que2_chng()">
-
-           </label>
-           <label for="q2b">
-             <input type="button" class="poll_option" id="q2b" name="q2" value="Option2" onclick="que2_chng()">
-
-           </label>
-           <label for="q2c">
-             <input type="button" class="poll_option" id="q2c" name="q2" value="Option3" onclick="que2_chng()">
-
-           </label>
-           <label for="q2d">
-             <input type="button" class="poll_option" id="q2d" name="q2" value="Option4" onclick="que2_chng()">
-
-           </label>
-           </div>
-
-           <div id="q3" class="poll_part">
-            <div id="question">Q3 Choose one of the four</div>
-     			 <label for="q3a">
-              <input type="button" class="poll_option" id="q3a" name="q3" value="Option1" onclick="que3_chng()">
-
-            </label>
-            <label for="q3b">
-              <input type="button" class="poll_option" id="q3b" name="q3" value="Option2" onclick="que3_chng()">
-
-            </label>
-            <label for="q3c">
-              <input type="button" class="poll_option" id="q3c" name="q3" value="Option3" onclick="que3_chng()">
-
-            </label>
-            <label for="q3d">
-              <input type="button" class="poll_option" id="q3d" name="q3" value="Option4" onclick="que3_chng()">
-
-            </label>
-            </div>
-
-            <div id="qpoll" class="poll_part">
-               <p>Thank you for taking this poll</p>
-               <div class="lastpoll">
-               <input type="button" id="finishpoll" name="finish" value="Finish poll" >
-               <input type="button"  id="retakepoll" name="retaking" value="Retake the poll">
-               </div>
-             </div>
+        </div>
 
 
 
@@ -116,63 +116,67 @@
 
 
 
-        <div class="collapse fixed-bottom" id="a_form">
-            <form  method="" onsubmit="v">
-                <input type="text"  placeholder="" class="last_name" name="last_name"
-                onKeyPress="return blockSpecialChar(event)" class="form-control" id="textbox1">
-                <input readonly name="Send" value="Send" id="q_submit" type="submit" data-toggle="collapse" data-target="#msg" aria-expanded="false" aria-controls="msg" class="but" >
+      <div class="collapse fixed-bottom" id="a_form">
+        <form method="" onsubmit="v">
+          <input type="text" placeholder="" class="last_name" name="last_name"
+            onKeyPress="return blockSpecialChar(event)" class="form-control" id="textbox1">
+          <input readonly name="Send" value="Send" id="q_submit" type="submit" data-toggle="collapse" data-target="#msg"
+            aria-expanded="false" aria-controls="msg" class="but">
 
 
-            </form>
-        </div>
+        </form>
+      </div>
 
 
 
       <div class="content hid" id="chat">
         <div class="cont_header">
           <span id="header_msg">Message</span>
-         <span class="closebtn">×</span>
+          <span class="closebtn">×</span>
         </div>
         <div id="User">Username</div>
         <div id="msg"></div>
         <div id="send_msg">
-          <input type="textarea" placeholder="Send a message" name="message" value="">
-          <img src="../../assets/images/icons/icons8-email-send-61.png" alt="" >
+          <form >
+            <label for="message"></label>
+            <input type="textarea" placeholder="Send a message" name="message" value="">
+            <input type="image"  src="../../assets/images/icons/icons8-email-send-61.png" style="width:25px;height:25px;display:inline-block">
+          </form>
         </div>
       </div>
 
       <div class="content hid" id="briefcase">
         <div class="cont_header">
           <span id="header_msg">Briefcase</span>
-         <span class="closebtn">×</span>
+          <span class="closebtn">×</span>
         </div>
 
         <div class='files'>
           <div class="file1">
-           <i class="fa fa-file" aria-hidden="true"></i>
-           <p>first file.txt</p>
-           <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <p>first file.txt</p>
+            <i class="fa fa-download fa-2x" aria-hidden="true"></i>
           </div>
 
           <div class="file2">
-           <i class="fa fa-file" aria-hidden="true"></i>
-           <p>second file.txt</p>
-           <i class="fa fa-download fa-2x" aria-hidden="true" style="vertically-align:middle"></i>
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <p>second file.txt</p>
+            <i class="fa fa-download fa-2x" aria-hidden="true" style="vertically-align:middle"></i>
           </div>
 
           <div class="file3">
-           <i class="fa fa-file" aria-hidden="true"></i>
-           <p>third file.txt</p>
-           <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <p>third file.txt</p>
+            <i class="fa fa-download fa-2x" aria-hidden="true"></i>
           </div>
 
           <div class="file4">
-           <i class="fa fa-file" aria-hidden="true"></i>
-           <p>fourth file.txt</p>
-           <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <p>fourth file.txt</p>
+            <i class="fa fa-download fa-2x" aria-hidden="true"></i>
           </div>
 
-      </div>
+        </div>
       </div>
 
 
@@ -186,7 +190,7 @@
     <div class="poll_bt zoom"><img src="../../assets/images/icons/poll.png" alt=""></div>
     <div class="chat_bt zoom"><img src="../../assets/images/icons/chats.png" alt=""></div>
     <div class="snotes_bt zoom"><img src="../../assets/images/icons/speaker_notes.png" alt=""></div>
-    <div class="faq_bt zoom"><img src="../../assets/images/icons/Ask a question.png" alt="" ></div>
+    <div class="faq_bt zoom"><img src="../../assets/images/icons/Ask a question.png" alt=""></div>
     <div class="briefcase_bt zoom"><img src="../../assets/images/icons/briefcase.png" alt=""></div>
     <div class="exit_bt zoom"><img src="../../assets/images/icons/exit.png" alt=""></div>
   </footer>
