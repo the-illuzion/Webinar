@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MadburyService } from '../services/madbury.service';
 
 declare var $: any;
 @Component({
@@ -9,12 +10,13 @@ declare var $: any;
 })
 export class SeminarPageComponent implements OnInit {
 
-  constructor() { }
+  public videourl=undefined
+  constructor(private seminarservice:MadburyService) { }
 
   ngOnInit(): void {
 
 
-
+    this.getid();
 
     if ($(window).width() < 950) {
 
@@ -174,6 +176,17 @@ export class SeminarPageComponent implements OnInit {
       $(".navigation").hide();
     });
 
+  }
+
+
+  getid() {
+    this.seminarservice.getid().then(s => {
+      console.log(s)
+      this.videourl = "https://www.youtube.com/embed/" + s['result'][0].youtubeid
+      console.log(this.videourl)
+      $("#iframediv").append(`<iframe src="` + this.videourl + `" width="100%" height="100%" frameborder="0"
+      allowfullscreen allow="autoplay; encrypted-media" style="background: black;"></iframe>`)
+    })
   }
 
 }
