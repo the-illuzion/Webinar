@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SeminarPageComponent } from './seminar-page/seminar-page.component';
 import { SeminarMobileComponent } from './seminar-mobile/seminar-mobile.component';
+import { JoinnowComponent } from './joinnow/joinnow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     SeminarPageComponent,
-    SeminarMobileComponent
+    SeminarMobileComponent,
+    JoinnowComponent
   ],
   imports: [
     BrowserModule,

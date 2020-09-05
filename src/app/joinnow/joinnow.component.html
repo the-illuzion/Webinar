@@ -1,0 +1,67 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content form-login">
+            <div class="col-md-12 col-sm-12 c0l-xs-12">
+
+                <form id="register_form" action="" method="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+                    <div class="form-group form-field">
+                        <label for="name" class="field-label">Enter your email id
+                        </label>
+                        <input type="text" placeholder="" id="last_name" name="last_name"
+                            onFocus="this.placeholder = ''" onBlur="this.placeholder = ''"
+                            onKeyPress="return blockSpecialChar(event)" class="form-control">
+                        <label for="pwd" class="field-label">Password
+                        </label>
+                        <input type="password" placeholder="" id="pwd" name="pwd"
+                                onFocus="this.placeholder = ''" onBlur="this.placeholder = ''"
+                                onKeyPress="return blockSpecialChar(event)" class="form-control">    
+                        <label class="font-label" style="color:#fff; font-family: arial;" for="myalue"></label>
+                        <p>Not registered? <a (click)="registration()" s="text-hover" style="cursor: pointer;">Click here</a></p>
+
+                    </div>
+
+                    <div class="form-group text-center">
+                        <input name="Login" value="Login" class="btn login" data-dismiss="modal" (click)="login()">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 topper">
+                <!--<img src="images/PowerOfOne.png" class="img-responsive">-->
+                <img src="../../assets/images/candid.png" id="candid">
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+
+                <div class="col-lg-3  col-md-3">
+                    <div class="footer-box">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Join Now</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
