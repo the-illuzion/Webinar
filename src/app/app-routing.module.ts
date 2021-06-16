@@ -5,9 +5,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { JoinnowComponent } from './joinnow/joinnow.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+  { path: 'join', component: LandingPageComponent },
   { path: 'seminar', component: SeminarPageComponent},
-  {path: 'join', component:JoinnowComponent}
+  {path: '', component:JoinnowComponent}
 ];
 
 @NgModule({

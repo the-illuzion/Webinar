@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+declare var $: any;
 
 @Component({
   selector: 'app-joinnow',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JoinnowComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  register(){
+    $(".modal-backdrop").remove();
+    this.router.navigate(['/join']);
+  }
+
+  join(){
+    $(".modal-backdrop").remove();
+    this.router.navigate(['/seminar']);
   }
 
 }

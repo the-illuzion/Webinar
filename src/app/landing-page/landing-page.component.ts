@@ -9,9 +9,13 @@ import { Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    this.router.navigate(['/seminar']);
   }
 
 }
